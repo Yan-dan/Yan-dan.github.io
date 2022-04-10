@@ -1,0 +1,82 @@
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+/*响应式图像style，<img src="..." class="img-responsive" alt="响应式图像">, 让图像自适应大小却不超过父类*/
+
+body {
+  font-family: "Arial", Helvetica, Arial, sans-serif; /*字体
+  font-size: 18px; /*字体默认大小*/
+  line-height: 1.5; /*默认的行高*/
+  color: #56473d; /*默认的文本颜色*/
+  background-color: #f5e9c2; /*#bcc595：淡绿色*/
+  margin: 0px; /*距离窗口上沿的距离*/
+}
+
+.container {
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+/*.btn:hover .glyphicon{
+    color: #81624d;
+}*/
+
+.btn.btn-default{
+    background-color: #bcc595;
+    color:#56473d;
+    border-color: #ffffff;
+    outline:none;
+    border-width: 3px;
+}
+
+.btn.btn-default:hover {
+    color: #81624d;
+    outline: none;
+}
+
+.btn.btn-default:active, .btn.btn-default:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+/*
+    border-color: #ffffff;
+    border-width: 3px;
+*/
+
+/*.btn.btn-default {
+  color: #ffffff;
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+}*/
+
+/*.btn:focus .glyphicon{
+    color: #2b2623;
+   :active 元素被点击时变色，但颜色在点击后消失
+    :focus 元素被点击后变色，且颜色在点击后不消失
+}*/
+
+/*
+通过属性 @link-color 设置全局链接的颜色。
+
+对于链接的默认样式，如下设置：
+
+a:hover,
+a:focus {
+  color: #2a6496;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+所以，当鼠标悬停在链接上，或者点击过的链接，颜色会被设置为 #2a6496。同时，会呈现一条下划线。
+除此之外，点击过的链接，会呈现一个颜色码为 #333 的细的虚线轮廓。另一条规则是设置轮廓为 5 像素宽，且对于基于 webkit 浏览器有一个 -webkit-focus-ring-color 的浏览器扩展。轮廓偏移设置为 -2 像素。
+以上所有这些样式都可以在 scaffolding.less 中找到。
+*/
